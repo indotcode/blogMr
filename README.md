@@ -10,3 +10,7 @@
 - запускаем сиды ```php artisan db:seed```
 - запускаем локальный сервер ```php artisan serve```
 
+
+**Тестовое задания выполнено по:** 
+https://gist.github.com/an1creator/25e5428b6bb83e313541c18b0bb4c073#file-v2-md
+
