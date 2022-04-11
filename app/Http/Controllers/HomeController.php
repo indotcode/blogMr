@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\PostHasViewed;
 use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Http\Request;
@@ -37,6 +38,7 @@ class HomeController extends Controller
     {
         $post = Post::where('slug', $slug)->first();
         if($post == null) return abort(404);
+        event(new PostHasViewed($post));
         $data = [];
         $data['post'] = $post;
         return view('post', $data);

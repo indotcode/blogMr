@@ -16,10 +16,6 @@ export default {
         }
     },
     props: {
-        detect: {
-            type: Boolean,
-            default: false
-        },
         view: {
             type: Number,
             required: true
@@ -28,16 +24,6 @@ export default {
             type: Number,
             required: true
         }
-    },
-    mounted() {
-        if(this.detect){
-            setTimeout(() => {
-                window.axios.post('/api/view/'+ this.id)
-            }, 5000)
-        }
-    },
-    methods: {
-
     }
 };
 </script>

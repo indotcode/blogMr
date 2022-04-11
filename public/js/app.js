@@ -19530,10 +19530,6 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   props: {
-    detect: {
-      type: Boolean,
-      "default": false
-    },
     view: {
       type: Number,
       required: true
@@ -19542,17 +19538,7 @@ __webpack_require__.r(__webpack_exports__);
       type: Number,
       required: true
     }
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    if (this.detect) {
-      setTimeout(function () {
-        window.axios.post('/api/view/' + _this.id);
-      }, 5000);
-    }
-  },
-  methods: {}
+  }
 });
 
 /***/ }),

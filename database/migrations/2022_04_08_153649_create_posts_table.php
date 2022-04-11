@@ -18,7 +18,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->text('content');
-            $table->bigInteger('view', 50)->default(0);
+            $table->bigInteger('view')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

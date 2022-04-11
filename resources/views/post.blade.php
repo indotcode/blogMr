@@ -12,7 +12,7 @@
                     <like-post :status="{{$post->getStatusLike()}}" :id="{{$post->id}}"></like-post>
                 </div>
                 <div>
-                    <view-post :detect="true" :id="{{$post->id}}" :view="{{$post->view}}"></view-post>
+                    <view-post :id="{{$post->id}}" :view="{{$post->view}}"></view-post>
                 </div>
             </div>
             <div class="flex flex-wrap mb-5">
